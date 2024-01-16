@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 5000;
 // Enable CORS
 app.use(cors());
 
+app.use(cors({ origin: 'https://creative-manatee-754103.netlify.app' }));
+
 // Parse incoming requests with JSON payloads
 app.use(bodyParser.json());
 
